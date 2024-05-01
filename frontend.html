@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to ZOMBIE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF; /* Color changed to white */
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 2rem;
+    }
+
+    .welcome-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .welcome-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: green; /* Changed color to green */
+    }
+    
+    .welcome-section p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .input-row i {
+      margin-right: 10px;
+    }
+
+    .signup-button {
+      padding: 10px 15px;
+      font-size: 1.3rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .signup-button:hover {
+      background-color: #0056b3;
+    }
+
+    .signup-button i {
+      margin-right: 8px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .verify-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+    
+    .verify-button:hover {
+      background-color: #005600;
+    }
+
+    .google-signup-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+
+    .google-signup-button:hover {
+      background-color: #becad6;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .report-issue-button,
+    .open-button,
+    .close-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff; /* Text color changed to white */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0 10px;
+      background-color: transparent; /* Background color set to transparent */
+    }
+
+    .report-issue-button:hover,
+    .open-button:hover,
+    .close-button:hover {
+      background-color: #f7f9fc;
+    }
+
+    .close-button {
+      background-color: #d9534f;
+    }
+
+    .close-button:hover {
+      background-color: #c9302c;
+    }
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+    <header>
+      <div class="logo">ZOMBIE</div>
+      <nav>
+        <ul>
+          <li><a class="report-issue-button" href="#">Report an issue</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="welcome-section">
+      <h1>Welcome to ZOMBIE</h1>
+      <p>Sign up to create a new account</p>
+      <div class="input-row">
+        <i class="fas fa-envelope"></i>
+        <input id="emailInput" type="email" placeholder="Enter email ID">
+      </div>
+      <div class="input-row">
+        <i class="fas fa-mobile-alt"></i>
+        <input id="mobileInput" type="tel" placeholder="Enter Mobile number">
+      </div>
+      <div class="input-row">
+        <i class="fas fa-lock"></i>
+        <input id="passwordInput" type="password" placeholder="Enter New Password">
+      </div>
+      <button class="signup-button" onclick="signUp()">Sign Up</button>
+      <p>Already have an account? <a href="index1.html">Log in</a></p> <!-- Change href to point to your login page -->
+      <p>Verification codes will be sent to your respective email and mobile.</p>
+      <button class="verify-button" onclick="redirectToIndex2()">Verify</button>
+    </section>
+    <footer>
+      <button class="google-signup-button">Sign up with Google Account</button>
+    </footer>
+  
+    <!-- Button Group -->
+
+    <script>
+      // Function to handle signup process
+      function signUp() {
+        // Get values from input fields
+        var email = document.getElementById("emailInput").value;
+        var mobile = document.getElementById("mobileInput").value;
+        var password = document.getElementById("passwordInput").value;
+
+        // Here you could send this data to your server for processing and verification
+        // For now, let's just log the values
+        console.log("Email:", email);
+        console.log("Mobile:", mobile);
+        console.log("Password:", password);
+      }
+
+      // Function to redirect to index2.html
+      function redirectToIndex2() {
+        window.location.href = "frontend3.html";
+        window.location.href = "frontend4.html";
+      }
+    </script>
+  </body>
+</html>

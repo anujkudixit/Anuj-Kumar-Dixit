@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back ZOMBIE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF; /* Color changed to white */
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 2rem;
+    }
+
+    .welcome-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .welcome-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: green; /* Changed color to green */
+    }
+    
+    .welcome-section p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .input-row i {
+      margin-right: 10px;
+    }
+
+    .signup-button {
+      padding: 10px 15px;
+      font-size: 1.3rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .signup-button:hover {
+      background-color: #0056b3;
+    }
+
+    .signup-button i {
+      margin-right: 8px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .Submit-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+    
+    .Submit-button:hover {
+      background-color: #005600;
+    }
+
+    .google-signup-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+
+    .google-signup-button:hover {
+      background-color: #becad6;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .Submit-button,
+    .Submit-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .Submit-button:hover,
+    .signup-button:hover {
+      background-color: #0056b3;
+    }
+
+    .Submit-button {
+      margin-right: 10px;
+    }
+
+    /* Change text color for "Report an issue" */
+    .report-issue-button {
+      color: #fff;
+    }
+
+    /* Increase input box size */
+    input[type="text"], input[type="password"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Welcome Back ZOMBIE</div>
+    <nav>
+      <ul>
+        <li><a class="report-issue-button" href="#">Report an issue</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="welcome-section">
+    <h1>Login to continue with the software</h1>
+    <p>Create a new account</p>
+    <div class="input-row">
+      <label for="remember-me"><input type="checkbox" id="remember-me"> Remember me</label>
+    </div>
+    <div class="input-row">
+      <i class="fas fa-user"></i>
+      <input id="emailOrMobile" type="text" placeholder="Enter email ID or mobile number">
+    </div>
+    <div class="input-row">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Enter New Password">
+    </div>
+    <button class="signup-button" onclick="redirectToIndex()">Sign Up</button>
+    <button class="Submit-button" onclick="redirectToIndex3()">Submit</button>
+    <p>You don't have to login daily.</p>
+  </section>
+  <footer>
+    <button class="google-signup-button">Login im with Google Account</button>
+  </footer>
+
+  <script>
+    function redirectToIndex() {
+      window.location.href = "frontend.html";
+    }
+
+    function redirectToIndex3() {
+      window.location.href = "frontend3.html";
+    }
+  </script>
+</body>
+</html>

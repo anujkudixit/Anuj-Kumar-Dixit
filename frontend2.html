@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to GROOT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF; /* Color changed to white */
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 2rem;
+    }
+
+    .welcome-section {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    /* Style for the double lines */
+    .welcome-section::before,
+    .welcome-section::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: green;
+    }
+
+    .welcome-section::before {
+      top: -8px;
+    }
+
+    .welcome-section::after {
+      bottom: -8px;
+    }
+    
+    .welcome-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: green; /* Changed color to green */
+    }
+    
+    .welcome-section p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .input-row i {
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .Submit-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 20px auto; /* Center the button horizontally and add margin */
+      display: block; /* Make it a block element to occupy full width */
+    }
+    
+    .Submit-button:hover {
+      background-color: #005600;
+    }
+
+    .forgot-password-link {
+      color: green; /* Set the color to green */
+      text-decoration: underline;
+      display: block; /* Make it a block element to occupy full width */
+    }
+
+    .report-issue-button {
+      color: #fff; /* Set the color to white */
+    }
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ZOMBIE</div>
+    <nav>
+      <ul>
+        <li><a class="report-issue-button" href="#">Report an issue</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="welcome-section">
+    <h1>Company Log in</h1>
+    <p>Only Company Owner and higher officials can log in</p>
+    <div class="input-row">
+      <i class="fas fa-envelope"></i>
+      <input id="emailInput" type="email" placeholder="Enter a valid username">
+    </div>
+    <div class="input-row">
+      <i class="fas fa-lock"></i>
+      <input id="passwordInput" type="password" placeholder="Enter password">
+    </div>
+    
+    <a href="index2.html" class="forgot-password-link">Forgot Password?</a>
+    <!-- Link to the password reset page -->
+
+    <button class="Submit-button" onclick="submitForm()">Submit</button>
+    <!-- Submit button -->
+  </section>
+  
+  <footer>
+    <!-- Button Group -->
+  </footer>
+
+  <script>
+    function submitForm() {
+      // Replace this with your code to submit the form data
+      alert("Form submitted");
+    }
+  </script>
+</body>
+</html>
